@@ -1,0 +1,37 @@
+@import "propiedades.scss";
+
+.storyBorder {
+    padding: 2px;
+    background: linear-gradient(200deg,
+            $gradient-um 25%,
+            $gradient-dois 50%,
+            $gradient-tres 75%,
+            $gradient-quatro 100%);
+    border-radius: 50%;
+}
+
+.iconPerfil {
+    border-radius: 50%;
+    border: 2px solid $background-white;
+    display: block;
+    object-fit: cover;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.small {
+        width: 25px;
+        height: 25px;
+    }
+
+    &.medium {
+        width: 35px;
+        height: 35px;
+    }
+
+    &.big {
+        width: 60px;
+        height: 60px;
+    }
+}

@@ -1,0 +1,106 @@
+@import "propiedades.scss";
+
+.card {
+    border: 1px solid $border-color-grey;
+    background-color: $background-white;
+    margin-bottom: 1em;
+    border-radius: 10px;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75em;
+
+
+        .perfil {
+            margin-bottom: 0;
+        }
+
+        .cardButton {
+            height: 30px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .cardImage {
+        width: 100%;
+        display: block;
+    }
+
+    .curtidoPor {
+        display: flex;
+        padding-left: 1em;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        span {
+            font-size: 0.75em;
+            margin-left: 0.5em;
+            padding-top: 0.5em;
+        }
+    }
+
+    .comentario {
+        margin-bottom: 0.75em;
+    }
+
+    .tempoPostado {
+        font-size: 0.6em;
+        padding-left: 2em;
+        padding-bottom: 1em;
+        color: $font-color-dois;
+        border-bottom: 1px solid $border-color-grey-dois;
+    }
+
+    .addComentario {
+        display: flex;
+        font-size: 0.85em;
+        padding: 1.5em 1.25em;
+        align-items: center;
+        flex: 1;
+
+        .comentarioTexto {
+            min-width: 200px;
+            color: $font-color-dois;
+        }
+
+        .reagir {
+            margin-right: 1em;
+            width: 24px;
+            height: 24px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .publicar {
+            width: 55%;
+            text-align: right;
+            justify-content: end;
+            color: $link-color-dois;
+            cursor: pointer;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+    .card {
+        border: none;
+    }
+
+    .addComentario {
+        display: none;
+    }
+
+    .tempoPostado {
+        border: none;
+    }
+}

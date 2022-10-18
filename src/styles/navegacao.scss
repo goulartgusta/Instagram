@@ -1,0 +1,60 @@
+@import "propiedades.scss";
+
+.navegacao {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: $background-white;
+    width: 100%;
+    border-bottom: 1px solid $border-color-grey;
+
+    .container {
+        padding: 1em 0 0.9em 0;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        .logo {
+            padding: 0 1em;
+            width: 100px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .search {
+            border: 1px solid rgba(239, 239, 239, 239);
+            border-radius: 10px;
+            background-color: rgba(239, 239, 239, 239);
+            min-width: 225px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            border-radius: 5px;
+
+            .searchIcon {
+                margin-left: 0.75em;
+                width: 18px;
+                opacity: 0.8;
+                margin-right: 0.75em;
+            }
+
+            .searchText {
+                color: $font-color-dois;
+                font-size: 0.90em;
+                font-weight: 200;
+                margin-bottom: -2px;
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .search {
+        display: none !important;
+    }
+}
