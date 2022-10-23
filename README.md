@@ -1,6 +1,6 @@
 # Clone do Instagram em React
 
-### Clone do Instagram desenvolvido em React. Atividade proposta pelo professor Gabriel no Instituto Proa 💙.
+#### Clone do Instagram desenvolvido em React. Atividade proposta pelo professor Gabriel no Instituto Proa 💙.
 
 <br>
 
